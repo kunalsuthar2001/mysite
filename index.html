@@ -46,9 +46,9 @@ nav {
 .nav-links a:hover { color: var(--orange); }
 
 .hero {
-  min-height: 100vh; padding: 80px 4rem 0;
-  display: grid; grid-template-columns: 1fr 320px;
-  align-items: center; gap: 2rem;
+  min-height: 100vh; padding: 80px 3rem 0;
+  display: grid; grid-template-columns: 1fr 1fr;
+  align-items: center; gap: 1rem;
   position: relative; overflow: hidden;
 }
 .hero::after {
@@ -126,7 +126,8 @@ nav {
 }
 .btn-linkedin:hover { background: #004182; transform: translateY(-2px); }
 
-.hero-right { opacity: 0; animation: fadeLeft 0.7s 0.8s forwards; }
+.hero-left { padding-left: 4rem; }
+.hero-right { padding-right: 2rem; opacity: 0; animation: fadeLeft 0.7s 0.8s forwards; }
 .hero-photo-wrap {
   flex-shrink: 0;
   width: 150px; height: 190px;
@@ -170,10 +171,14 @@ nav {
 .hb-yellow .hb-desc { color: rgba(13,13,13,0.45); }
 .hb-orange .hb-desc { color: rgba(255,255,255,0.6); }
 .hb-light .hb-desc { color: var(--ink-light); }
-.hb-harvard { background: #1a1f5e; grid-column: span 2; }
+.hb-harvard { background: #1a1f5e; }
 .hb-harvard .hb-num { color: #fff; }
 .hb-harvard .hb-label { color: rgba(255,255,255,0.55); }
 .hb-harvard .hb-desc { color: rgba(255,255,255,0.35); }
+.hb-teal { background: #0f9e75; }
+.hb-teal .hb-num { color: #fff; }
+.hb-teal .hb-label { color: rgba(255,255,255,0.7); }
+.hb-teal .hb-desc { color: rgba(255,255,255,0.55); }
 
 .marquee-wrap { background: var(--ink); overflow: hidden; padding: 1rem 0; }
 .marquee-track { display: flex; animation: marquee 30s linear infinite; white-space: nowrap; }
@@ -406,6 +411,11 @@ footer {
         <div class="hb-num">1/600</div>
         <div class="hb-label">Harvard Delegate</div>
         <div class="hb-desc">Scholarship · 25,000+ global applicants</div>
+      </div>
+      <div class="hb-card hb-teal">
+        <div class="hb-num">30%</div>
+        <div class="hb-label">ROI Growth</div>
+        <div class="hb-desc">Influencer campaigns at IPLIX Media</div>
       </div>
     </div>
   </div>
